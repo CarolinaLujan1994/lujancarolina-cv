@@ -1,6 +1,36 @@
+<body class="bg-dark">
+    <div class="container bg-light text-dark">
+        <div class="row m-2">
+            <div class="col-md-4 d-flex custom-col-height">
+                <div class="rounded">
+                    {{persona.foto}}
+                    <!--  <img class="custom-size"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/250px-HTML5_logo_and_wordmark.svg.png"
+                        alt="Foto de currículum"> -->
+                </div>
+            </div>
+            <div class="col-md-8 custom-col-height">
+                <h2 class="mb-3">{{persona.nombre}}</h2>
+                <br>
+                <p>{{persona.descripcion}}</p>
+            </div>
 
-<h1>kjahdklajd</h1>
-
-<h3>{{persona.nombre}}</h3>
-<!-- <h3>{{persona.descripcion}}</h3>
-<h3>{{persona.foto}}</h3> -->
+        </div>
+        <div class="row m-2">
+            <div class="col-md-4 d-flex">
+                <div class="buttons-side">
+                    <button id="btn1" onclick="mostrarInformacion(1)">{{informacionGral[0].titulo}}</button>
+                    <button id="btn2" onclick="mostrarInformacion(2)">{{informacionGral[1].titulo}}</button>
+                    <button id="btn3" onclick="mostrarInformacion(3)">{{informacionGral[2].titulo}}</button>
+                    <button id="btn4" onclick="mostrarInformacion(4)">{{informacionGral[3].titulo}}</button>
+                    <button id="btn5" onclick="mostrarInformacion(5)">{{informacionGral[4].titulo}}</button>
+                    <button id="btn6" onclick="mostrarInformacion(6)">{{informacionGral[5].titulo}}</button>
+                    <button id="btn7" onclick="mostrarInformacion(7)">{{informacionGral[6].titulo}}</button>
+                </div>
+            </div>
+            <div class="col-md-8 d-flex">
+                <p id="info-container"></p>
+            </div>
+        </div>
+    </div>
+</body>

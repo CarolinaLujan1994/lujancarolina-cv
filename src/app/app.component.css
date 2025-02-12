@@ -1,0 +1,13 @@
+.custom-col-height {
+    height: 300px; 
+}
+
+.custom-size {
+    width: 200px !important;
+    height: 200px !important; 
+}
+
+.buttons-side {
+    display: block;
+    margin-bottom: 10px;
+}
